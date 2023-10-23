@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class Singleton
+{
+private:
+	int num;
+	static Singleton s;
+	Singleton()
+	{
+		// default constructor
+	}
+	Singleton(Singleton& ref)
+	{
+		cout << "in copy contructor"<<endl;
+	}
+
+public:
+	void display()
+	{
+		cout << "Inside display function" << endl;
+	}
+	void display1()
+	{
+		cout << "Inside display function1" << endl;
+	}
+	static Singleton& getSingleton()
+	{
+		return s;
+	}
+};
+Singleton Singleton::s;
+
+int main()
+{
+	Singleton& ref=Singleton::getSingleton();
+	ref.display();
+	ref.display1();
+}
