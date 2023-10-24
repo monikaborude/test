@@ -1,0 +1,51 @@
+1) Check if a given number is even or odd.
+
+#!/bin/bash
+
+read -p "enter a number:" num
+if [ $(( $num % 2 )) -eq 0 ]
+then
+echo " the number $num is even"
+else
+echo "the number $num is odd"
+fi
+
+
+
+2) Find the factorial of a given number.
+
+#!/bin/bash
+
+#Determine the largest among three numbers
+read -p "Enter the  three number" num1 num2n num3
+
+if [ $num1 -ge $num2 ] && [ $num1 -ge $num3 ]
+then
+echo "$num1 is greater number"
+elif [ $num2 -ge $num1 ] $$ [ $num2 -ge $num3 ]
+then
+echo "$num2 is greatest number"
+
+elif [ $num3 -ge $num1 ] && [ $num3 -ge $num1 ]
+then
+echo "$num3 is greatest number"
+fi
+
+3) Determine the largest among three numbers.
+#!/bin/bash
+
+#Determine the largest among three numbers
+read -p "Enter the  three number" num1 num2n num3
+
+if [ $num1 -ge $num2 ] && [ $num1 -ge $num3 ]
+then
+echo "$num1 is greater number"
+elif [ $num2 -ge $num1 ] $$ [ $num2 -ge $num3 ]
+then
+echo "$num2 is greatest number"
+
+elif [ $num3 -ge $num1 ] && [ $num3 -ge $num1 ]
+then
+echo "$num3 is greatest number"
+fi
+
